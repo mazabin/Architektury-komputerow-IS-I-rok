@@ -1,0 +1,4 @@
+	czytanie: czytanie.o
+		ld czytanie.o -o czytanie
+	czytanie.o: czytanie.asm
+		nasm -f elf64 czytanie.asm -o czytanie.o
